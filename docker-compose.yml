@@ -1,0 +1,50 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    volumes:
+      # アクセスログ・エラーログを外部に保存する
+      - ./logs/nginx:/var/log/nginx
+      # 設定ファイルを外部に保存する
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      # Laravelプロジェクトと繋ぐ
+      - ./CodeIgniterPictweet:/var/www/CodeIgniterPictweet
+    ports:
+      - 58710:80
+    networks:
+      - CodeIgniterPictweet_network
+    depends_on:
+      # PHPの後に処理を実行しはじめる
+      - phpfpm
+    tty: true
+
+  phpfpm:
+    build:
+      context: .
+      dockerfile: ./phpfpm/Dockerfile
+    volumes:
+      - ./CodeIgniterPictweet:/var/www/CodeIgniterPictweet
+    networks:
+      - CodeIgniterPictweet_network
+    depends_on:
+      - mysql
+    tty: true
+
+  mysql:
+    build:
+      context: .
+      dockerfile: ./mysql/Dockerfile
+    volumes: 
+      - ./logs/mysql:/var/log/mysql
+    environment:
+      TZ: 'Asia/Tokyo'
+    ports:
+      - 58720:3306
+    networks:
+      - CodeIgniterPictweet_network
+    tty: true
+
+networks:
+  CodeIgniterPictweet_network:

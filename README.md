@@ -1,2 +1,2 @@
-# codeIgnaterPictweet
-for lesson
+# CodeIgnaterLesson
+traning for CodeIgnater
