@@ -12,7 +12,7 @@ services:
       # Laravelプロジェクトと繋ぐ
       - ./CodeIgniterPictweet:/var/www/CodeIgniterPictweet
     ports:
-      - 58710:80
+      - 58610:80
     networks:
       - CodeIgniterPictweet_network
     depends_on:
@@ -41,7 +41,7 @@ services:
     environment:
       TZ: 'Asia/Tokyo'
     ports:
-      - 58720:3306
+      - 58620:3306
     networks:
       - CodeIgniterPictweet_network
     tty: true
