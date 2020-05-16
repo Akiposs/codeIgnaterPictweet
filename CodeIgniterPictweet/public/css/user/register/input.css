@@ -1,0 +1,32 @@
+main{
+    height: 550px;
+}
+.auth-field{
+    background-color: #fbb83e;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 80px 45px;
+}
+.auth-margin-email{
+    margin-bottom: 50px;
+}
+.auth-margin-password{
+    margin-bottom: 90px;
+}
+.auth-margin-social{
+    margin-bottom: 60px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+}
+.twitter-button{
+    background-color: rgb(29, 161, 242);
+    color:white;
+}
+.facebook-button{
+    background-color: rgb(58, 89, 152);
+    color:white;
+}

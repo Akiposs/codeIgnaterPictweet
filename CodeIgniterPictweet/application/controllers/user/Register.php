@@ -7,9 +7,13 @@ class Register extends CI_Controller {
 	 */
 	public function input()
 	{
-		$this->load->view('welcome_message');
-    }
+		$data['page'] = "新規登録";
+		$data['publicPath'] = "user/register/input";
 
+		$this->load->view('template/header', $data);
+		$this->load->view('user/register/input');
+		$this->load->view('template/footer');
+    }
 
     /**
 	 */

@@ -1,0 +1,15 @@
+footer{
+    background-color: #fbb83e;
+    color: white;
+    padding: 22px 22px 45px;
+}
+tr{
+    text-align: center;
+}
+.app-name{
+    font-size: 27px;
+    padding: 0 60px;
+}
+.footer-link{
+    font-size: 13px;
+}

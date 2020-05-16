@@ -1,0 +1,10 @@
+.position-r{
+    position: relative;
+}
+.site-name{
+    position: absolute;
+    bottom: 35px;
+    right: 90px;
+    color: white;
+    font-size: 55px;
+}
