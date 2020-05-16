@@ -1,0 +1,42 @@
+section{
+    margin-bottom: 150px; 
+}
+.position-r{
+    position: relative;
+}
+.site-name{
+    position: absolute;
+    bottom: 35px;
+    right: 90px;
+    color: white;
+    font-size: 55px;
+}
+.message{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #fbb83e;
+    height: 45px;
+    color: white;
+    text-align: center;
+}
+.message-detail{
+    display: flex;
+    justify-content: center;
+    padding: 0 10vw;
+    font-size: 18px;
+}
+footer{
+    background-color: #fbb83e;
+    color: white;
+    padding: 22px 22px 45px;
+}
+tr{
+    text-align: center;
+}
+.app-name{
+    font-size: 27px;
+    padding: 0 60px;
+}
+.footer-link{
+    font-size: 13px;
+}

@@ -7,7 +7,9 @@ class Tweet extends CI_Controller {
 	 */
 	public function reccomend()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('template/top/header');
+		$this->load->view('top');
+		$this->load->view('template/footer');
     }
 	/**
 	 */
