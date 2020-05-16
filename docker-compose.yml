@@ -38,6 +38,7 @@ services:
       dockerfile: ./mysql/Dockerfile
     volumes: 
       - ./logs/mysql:/var/log/mysql
+      - ./mysql/mysql.conf.d:/etc/mysql/mysql.conf.d
     environment:
       TZ: 'Asia/Tokyo'
     ports:

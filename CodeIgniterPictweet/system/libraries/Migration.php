@@ -378,15 +378,16 @@ class CI_Migration {
 	public function find_migrations()
 	{
 		$migrations = array();
-
 		// Load all *_*.php files in the migrations path
 		foreach (glob($this->_migration_path.'*_*.php') as $file)
 		{
 			$name = basename($file, '.php');
+			echo $file . "\n";
 
 			// Filter out non-migration files
 			if (preg_match($this->_migration_regex, $name))
 			{
+
 				$number = $this->_get_migration_number($name);
 
 				// There cannot be duplicate migration numbers
