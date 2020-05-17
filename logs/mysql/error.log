@@ -147,3 +147,4 @@ Version: '5.7.29'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Comm
 2020-05-16T12:14:27.951700Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 5191ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
 2020-05-16T12:14:47.917774Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 5349ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
 2020-05-16T16:14:26.962138Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 42136ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2020-05-17T02:50:20.582780Z 4 [Note] Aborted connection 4 to db: 'codeignater_db' user: 'root' host: 'localhost' (Got timeout reading communication packets)

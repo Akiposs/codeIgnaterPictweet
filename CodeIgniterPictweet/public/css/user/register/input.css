@@ -1,32 +1,37 @@
 main{
     height: 550px;
 }
+.theme{
+    text-align: center;
+    margin-bottom: 45px;
+}
 .auth-field{
     background-color: #fbb83e;
-    height: 500px;
     width: 400px;
     border-radius: 30px;
-    padding: 80px 45px;
+    padding:37px;
 }
 .auth-margin-email{
-    margin-bottom: 50px;
+    margin-bottom: 18px;
 }
 .auth-margin-password{
-    margin-bottom: 90px;
-}
-.auth-margin-social{
     margin-bottom: 60px;
 }
-button{
+
+input[type="submit"]{
     width: 150px;
     height: 40px;
     border-radius: 6px;
 }
-.twitter-button{
+/* .twitter-button{
     background-color: rgb(29, 161, 242);
     color:white;
 }
 .facebook-button{
     background-color: rgb(58, 89, 152);
     color:white;
+} */
+.error-messages{
+    color:red;
+    border-radius:20px;
 }

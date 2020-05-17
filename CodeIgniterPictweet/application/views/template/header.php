@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="/public/css/template/header.css"></style>
     <link rel="stylesheet" href="/public/css/<?php echo $publicPath ?>.css"></style>
     <link rel="stylesheet" href="/public/css/template/footer.css"></style>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+    <script src="/firebase/auth_conf.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <section class="position-r basic-header-height">

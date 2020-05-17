@@ -50,5 +50,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'tweet/reccomend';
+$route['user/register/input'] = 'user/register/input';
+$route['user/register/confirm'] = 'user/register/confirm';
+
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
